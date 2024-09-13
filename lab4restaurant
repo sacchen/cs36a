@@ -1,0 +1,77 @@
+1. CIS 36A – Java Programming I
+2. Lab 4: Restaurant
+3. All classes must follow good design and coding practices, including code indenting, and appropriate
+comments.
+Requirements:
+4.
+5. Create a class, called Restaurant, that represents a food-serving establishment. An instance of
+Restaurant should have the following instance variables (with data type of each instance variable
+shown in bold):
+a. name (String)
+b. foodType (String)
+c. address (String)
+d. owner (String)
+e. phoneNumber (int)
+f. businessLicenseNumber (int)
+g. yearlyGrossRevenue (double)
+13. All instance variables should be private.
+14. Create setter and getter methods for each of the seven instance variables. Thus, there will be fourteen
+setter and getter methods in total.
+15. Create a constructor for Restaurant that has a parameter for each of the seven instance variables, in
+exactly the order given from a to g in the list above.
+16. Create a String-valued instance method called invite that returns a String inviting the public to the
+restaurant, using the instance variables name, foodType, and address. For example, if an instance of
+Restaurant has the name “Michael’s Bistro”, the foodType “American Fusion”, and the address “123
+Center Street”, the invite method could return the String “Come down to Michael’s Bistro, a restaurant
+serving American fusion cuisine, located at 123 Center Street!”
+17. You can be creative with the exact wording of the String returned by your invite function. It does not
+have to be the exact wording used in the example above. However, the String returned must include
+the value of the instance variables name, foodType, and address!
+18. Create a String-valued instance method called getTaxInfo that returns a String concisely giving the
+value of the instance variables name, owner, businessLicenseNumber, and yearlyGrossRevenue, in a
+particular format shown below:
+19. name / owner / businessLicenseNumber / yearlyGrossRevenue
+20.
+21. That is, the String returned by getTaxInfo must contain the value of those four instance variables, with a
+forward slash between each instance variable, and a single space on either side of each forward slash!
+Please do not be creative with this, but make sure the String returned by getTaxInfo is in exactly this
+format!
+22. Finally, create a class called Demonstrator that has a main method. In the main method, create two
+different instances of Restaurant using your custom constructor, and print out the values of the invite
+and getTaxInfo methods of each of the two instances. Here is an example of what the output of your
+program might be run:
+23.
+24.
+25. Come down to Michael’s Bistro, a restaurant serving American
+fusion cuisine, located at 123 Center Street!
+26. Come down to Pizza Funktown, a restaurant serving pizza cuisine,
+located at 5000 Park Blvd!
+27. Michael’s Bistro / Michael Seidel / 1893091 / 220000
+28. Pizza Funktown / Bobo the Clown / 9838741 / 150000
+29.
+30.
+Summarized Checklist:
+31.
+32. Here is a checklist for the requirements of this Lab. This checklist is intended to be helpful, not
+a full description of the requirements; please refer to the above description of the requirements
+for clarity:
+33.
+1. Restaurant class
+2. Instance variables
+a. name (String)
+b. foodType (String)
+c. address (String)
+d. owner (String)
+e. phoneNumber (int)
+f. businessLicenseNumber (int)
+g. yearlyGrossRevenue (double)
+3. Setter methods for each instance variable
+4. Getter methods for each instance variable
+5. Constructor that takes argument for each instance variable, in the order listed above
+6. invite (String) instance method
+7. getTaxInfo (String) instance method
+8. Demonstrator class
+a. main method that runs when project is run
+i. Instantiates two restaurants using constructor function
+ii. Calls invite and getTaxInfo of each of these two Restaurant instances, and prints their
+output to the screen
